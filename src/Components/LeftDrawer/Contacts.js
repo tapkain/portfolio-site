@@ -2,7 +2,7 @@ import React from "react";
 import { IconButton } from "@material-ui/core";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { createMuiTheme } from "@material-ui/core/styles";
 
 const styles = theme => ({
   margin: {

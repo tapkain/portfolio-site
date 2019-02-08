@@ -12,6 +12,7 @@ import {
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Contacts from "./Contacts";
+import { Description, Work, Home } from "@material-ui/icons";
 
 const styles = {
   avatar: {
@@ -59,15 +60,21 @@ function LeftDrawer(props) {
         </ListItem>
         <Divider />
         <br />
+        <ListItem button key="Home">
+          <ListItemIcon>
+            <Home />
+          </ListItemIcon>
+          <ListItemText primary="Home" />
+        </ListItem>
         <ListItem button key="Projects">
           <ListItemIcon>
-            <i class="fas fa-briefcase" />
+            <Work />
           </ListItemIcon>
           <ListItemText primary="Projects" />
         </ListItem>
         <ListItem button key="Resume">
           <ListItemIcon>
-            <i class="fas fa-file-contract" />
+            <Description />
           </ListItemIcon>
           <ListItemText primary="Resume" />
         </ListItem>
